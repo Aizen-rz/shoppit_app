@@ -1,0 +1,33 @@
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensures it stays on top of other elements */
+    background-color: green; /* Light grey background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* Optional: Add shadow for better visibility */
+  }
+
+
+  .navbar-show {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .navbar-hide {
+    transform: translateY(-100%); /* Move navbar out of the screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  
+
+@media (max-width: 1000px) {
+    .responsiveCart {
+        margin-top: 20px;
+    }
+}
+
+
+.stickyNavbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1030; /* Ensures it stays above other elements */
+}
